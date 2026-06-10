@@ -5,10 +5,10 @@ import matplotlib.pyplot as ply
 import matplotlib.gridspec as gridspec
 from matplotlib.ticker import MultipleLocator
 
-# ── output folder ──────────────────────────────────────────────────────────────
+
 os.makedirs("outputs", exist_ok=True)
 
-# ── colour palette ─────────────────────────────────────────────────────────────
+
 C = {
     "male":    "#2563EB",
     "female":  "#DB2777",
@@ -26,9 +26,7 @@ C = {
     "grid":    "#334155",
 }
 
-# ── data ───────────────────────────────────────────────────────────────────────
-# Try loading a real World Bank CSV first; fall back to representative estimates.
-# Real CSV: download from data.worldbank.org → Nepal → Education → Download
+
 DATA_PATH = "data/nepal_education_wb.csv"
 
 if os.path.exists(DATA_PATH):
@@ -48,7 +46,7 @@ if os.path.exists(DATA_PATH):
     enr_sec    = get_series("SE.SEC.ENRR")
     parity     = get_series("SE.ENR.PRSC.FM.ZS")
 else:
-    # ── representative estimates (World Bank + UNESCO figures) ─────────────────
+  
     years = np.arange(1980, 2024)
 
     lit_male   = pd.Series(

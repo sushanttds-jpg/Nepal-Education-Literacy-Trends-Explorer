@@ -74,14 +74,12 @@ else:
                          [0.38,0.48,0.66,0.78,0.88,0.95,1.01,1.03]),
         index=years)
 
-# ── South Asia comparison (literacy rate, 2023 estimates) ─────────────────────
+
 sa_countries  = ["Nepal", "India", "Bangladesh", "Sri Lanka", "Pakistan", "Bhutan"]
 sa_lit_male   = [89,      84,      80,           97,          74,         80     ]
 sa_lit_female = [78,      74,      75,           95,          52,         68     ]
 
-# ══════════════════════════════════════════════════════════════════════════════
-# FIGURE 1 — Literacy Rate Trends
-# ══════════════════════════════════════════════════════════════════════════════
+
 def plot_literacy():
     fig, ax = ply.subplots(figsize=(11, 6), facecolor=C["bg"])
     ax.set_facecolor(C["card"])

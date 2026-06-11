@@ -144,7 +144,7 @@ def plot_enrollment():
     fig.tight_layout()
     fig.savefig("outputs/enrollment_trends.png", dpi=150, bbox_inches="tight")
     ply.close(fig)
-    print("✔  saved outputs/enrollment_trends.png")
+    print(" saved outputs/enrollment_trends.png")
 
 def plot_parity():
     fig, ax = ply.subplots(figsize=(11, 6), facecolor=C["bg"])

@@ -214,7 +214,7 @@ def plot_south_asia():
     fig.tight_layout()
     fig.savefig("outputs/south_asia_comparison.png", dpi=150, bbox_inches="tight")
     ply.close(fig)
-    print("✔  saved outputs/south_asia_comparison.png")
+    print(" saved outputs/south_asia_comparison.png")
 
 def plot_dashboard():
     fig = ply.figure(figsize=(18, 12), facecolor=C["bg"])

@@ -190,7 +190,7 @@ def plot_south_asia():
     bars_f = ax.bar(x + width/2, sa_lit_female, width, label="Female",
                     color=C["female"], alpha=0.85)
 
-    # highlight Nepal
+
     bars_m[0].set_edgecolor("white"); bars_m[0].set_linewidth(1.8)
     bars_f[0].set_edgecolor("white"); bars_f[0].set_linewidth(1.8)
 
